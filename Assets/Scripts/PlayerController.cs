@@ -3,18 +3,21 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    private Vector2 movement;
+    Vector2 movement;
+    Rigidbody2D rb;
+    void Awake() {
+        rb = transform.GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
         // Get input
         movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
     }
 
     void FixedUpdate()
     {
         // Apply movement
-        transform.Translate(movement * moveSpeed * Time.fixedDeltaTime);
+        rb.linearVelocity = movement * moveSpeed;
     }
 }

@@ -25,8 +25,9 @@ public class RockSpanwing : MonoBehaviour
                 rockPrefab, 
                 transform.position + new Vector3(Random.Range(-50, 50)/10, 0, 0), 
                 Quaternion.identity);
+            new_object.GetComponent<rockScript>().hitPoints = (uint)Random.Range(10, 100);
             Rigidbody2D new_rigidbody = new_object.GetComponent<Rigidbody2D>();
-            new_rigidbody.AddTorque(Random.Range(-10, 10)/10 * 100);
+            new_rigidbody.AddTorque(Random.Range(0, 1)*2-1 * 100);
             new_rigidbody.AddForce(Vector2.left * Random.Range(-10, 10)/10 * 200);
             new_rigidbody.excludeLayers = excludeMask;
         }

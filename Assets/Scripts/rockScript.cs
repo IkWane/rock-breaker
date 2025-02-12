@@ -11,6 +11,10 @@ public class rockScript : MonoBehaviour
     {
         display = transform.GetChild(0).GetComponent<TextMeshPro>();
         rb = GetComponent<Rigidbody2D>();
+        display.text = hitPoints.ToString();
+        float size = Map(Sigmoid(0.01f, hitPoints), 0.5f, 4);
+        transform.localScale = new Vector3(size, size, 1.0f);
+        rb.mass = size/2;
     }
 
     private float Sigmoid(float a, float x) {
@@ -24,9 +28,6 @@ public class rockScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        display.text = hitPoints.ToString();
-        float size = Map(Sigmoid(0.01f, hitPoints), 0.5f, 4);
-        transform.localScale = new Vector3(size, size, 1.0f);
-        rb.mass = size/2;
+        
     }
 }

@@ -435,6 +435,7 @@
 -analyzer:"/home/Unity/6000.0.31f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/home/Unity/6000.0.31f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/MainButtons.cs"
+"Assets/Scripts/PausePanel.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/RockSpawning.cs"
 "Assets/Scripts/rockScript.cs"

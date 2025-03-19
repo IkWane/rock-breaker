@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rock-breaker-1_0: 3096431930748942167
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      castle_ruins_warm_tone_0: -5446292977016266170
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,6 +6,7 @@ public class MainButtons : MonoBehaviour
   public GameObject Settings;
   public GameObject MainMenu;
   public GameObject Title;
+  
   public void PlayGame() 
   {
     SceneManager.LoadScene(1);

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bg-sunset1_0: 2360541598317865065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

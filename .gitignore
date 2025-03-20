@@ -1,0 +1,33 @@
+# Ignore Unity auto-generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+# Ignore memory captures and recordings
+[Mm]emoryCaptures/
+[Rr]ecordings/
+# Ignore Asset Store tools plugin (optional)
+# [Aa]ssets/AssetStoreTools*
+# Ignore JetBrains Rider plugin
+[Aa]ssets/Plugins/Editor/JetBrains*
+# Ignore Visual Studio and Rider project files
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+# Ignore Gradle cache directory
+.gradle/

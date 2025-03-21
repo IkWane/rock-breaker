@@ -792,7 +792,6 @@ MonoBehaviour:
   excludeMask:
     serializedVersion: 2
     m_Bits: 64
-  rockGroup: {fileID: 1624188914}
   maxRockAmount: 10
   rockAmount: 0
 --- !u!1 &1384995769

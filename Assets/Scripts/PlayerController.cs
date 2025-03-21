@@ -12,9 +12,13 @@ public class PlayerController : MonoBehaviour
     public float bulletSize;
     public float shootSpeed;
     float shootCooldown;
+
+
+
     void Awake() {
         rb = transform.GetComponent<Rigidbody2D>();
     }
+
 
     void Update()
     {

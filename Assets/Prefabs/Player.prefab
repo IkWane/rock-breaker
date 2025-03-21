@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 7043888013697117039}
   - component: {fileID: 993097333696854868}
   - component: {fileID: 8802299119315576737}
+  - component: {fileID: -3150273917854738680}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -163,6 +164,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
+  BulletPrefab: {fileID: 0}
+  bulletDamage: 0
+  bulletSpeed: 0
+  bulletSize: 0
+  shootSpeed: 0
 --- !u!61 &8802299119315576737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -209,6 +215,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.58}
   m_EdgeRadius: 0
+--- !u!114 &-3150273917854738680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470134355782111141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25361f3963d46454a9c3f818eb16728a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 1470134355782111141}
+  spawnPoint: {fileID: 63617101765403417, guid: da1db994c3d721b23b03c11a4c5a34dc, type: 3}
+  skinNames:
+  - Skin_0
+  - Skin_1
+  - Skin_2
 --- !u!1 &6646496436413457421
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,13 +4,18 @@ public class PlayerSpawner : MonoBehaviour
 {
     public GameObject playerPrefab;
     public Transform spawnPoint; 
-    public string[] skinNames = {"Skin_1", "Skin_2" };
+    public string[] skinNames = {"Skin_1"};
     private int selectedSkinIndex = 0;
+    private bool hasSpawned = true;
 
     void Start()
     {
-        Debug.Log("PlayerSpawner Start() called");
-        SpawnPlayer();
+        if (!hasSpawned) 
+        {
+          SpawnPlayer();
+          Debug.Log("Player Spawned !");
+          hasSpawned = true;
+        }
     }
 
 
@@ -37,6 +42,7 @@ public class PlayerSpawner : MonoBehaviour
         PlayerPrefs.SetInt("SelectedSkin", index);
         PlayerPrefs.Save();
     }
+
     // public void OnSkinSelected(int skinIndex)
     // {
     //     FindObjectOfType<PlayerSpawner>().SetSkin(skinIndex);

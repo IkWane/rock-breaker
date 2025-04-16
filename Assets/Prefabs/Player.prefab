@@ -243,6 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 213238239595682720}
   - component: {fileID: 3211312240417678791}
+  - component: {fileID: 2119409325837615938}
   m_Layer: 0
   m_Name: Collision
   m_TagString: Untagged
@@ -315,3 +316,15 @@ PolygonCollider2D:
       - {x: 0.5001455, y: -0.2887807}
       - {x: -0.5000295, y: -0.28868717}
   m_UseDelaunayMesh: 0
+--- !u!114 &2119409325837615938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646496436413457421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1971a464f8637c8289ca439be8f7e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

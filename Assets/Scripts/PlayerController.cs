@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -49,5 +50,10 @@ public class PlayerController : MonoBehaviour
     {
         // Apply movement
         rb.linearVelocity = movement * moveSpeed;
+    }
+
+    public void playerGetHit(Collider2D collider)
+    {
+        SceneManager.LoadScene(0);
     }
 }
